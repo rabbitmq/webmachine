@@ -28,7 +28,6 @@
 %% @doc Start the webmachine server.
 start() ->
     webmachine_deps:ensure(),
-    application:start(crypto),
     application:start(webmachine).
 
 %% @spec stop() -> ok
