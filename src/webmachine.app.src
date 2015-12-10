@@ -7,7 +7,6 @@
   {registered, []},
   {applications, [kernel,
                   stdlib,
-                  crypto,
                   mochiweb]},
   {mod, {webmachine_app, []}},
   {env, []}
