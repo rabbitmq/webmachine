@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta name="author" content="Basho Technologies" />
@@ -13,7 +13,7 @@
 		<h1><span class="hr"></span><a href="/">webmachine</a></h1>
 		<ul id="top">
 			<li><a href="/">Home</a></li>
-			<li><a href="http://bitbucket.org/justin/webmachine/">Source Code</a></li>
+			<li><a href="https://bitbucket.org/justin/webmachine/">Source Code</a></li>
                         <li><a href="contact.html">Contact</a></li>
 		</ul>
 		<div id="left">
@@ -49,7 +49,7 @@ wmtrace_resource:add_dispatch_rule("wmtrace", "/tmp").
 
 <p>
 Now issue the HTTP request that you're trying to debug.  Once it has
-finished, point your browser at <code>http://YOUR_HOST/wmtrace/</code>.
+finished, point your browser at <code>https://YOUR_HOST/wmtrace/</code>.
 You'll see one or more trace files available for inspection.
 Click on one of them to navigate to the trace inspection utility,
 which will look something like this:
@@ -179,7 +179,7 @@ and <code>wmtrace_resource:remove_dispatch_rules/0</code>.
 <p>
 Call <code>add_dispatch_rule/2</code> with the HTTP-exported path, and
 the path to the trace files.  For example, to expose the viewer at
-<code>http://YOUR_HOST/dev/wmtrace/</code> and point it at the trace
+<code>https://YOUR_HOST/dev/wmtrace/</code> and point it at the trace
 files in <code>/tmp/traces</code>, type in your application's erlang
 shell:
 </p>
@@ -278,7 +278,7 @@ Pids are simply logged in a marked tuple, after being run through
 	</div>
 
 <script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "https://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
 <script type="text/javascript">

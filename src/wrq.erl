@@ -322,7 +322,7 @@ base_uri_test_() ->
                                    StringPath,
                                    R1)
         end,
-    Tests = [{{http, "somewhere.com:8080"}, "http://somewhere.com:8080"},
+    Tests = [{{http, "somewhere.com:8080"}, "https://somewhere.com:8080"},
              {{https, "somewhere.com:8080"}, "https://somewhere.com:8080"},
 
              {{http, "somewhere.com"}, "http://somewhere.com"},
@@ -331,7 +331,7 @@ base_uri_test_() ->
              {{http, "somewhere.com:80"}, "http://somewhere.com"},
              {{https, "somewhere.com:443"}, "https://somewhere.com"},
              {{https, "somewhere.com:80"}, "https://somewhere.com:80"},
-             {{http, "somewhere.com:443"}, "http://somewhere.com:443"}],
+             {{http, "somewhere.com:443"}, "https://somewhere.com:443"}],
     [ ?_assertEqual(Expect, base_uri(Make_req(Scheme, Host)))
       || {{Scheme, Host}, Expect} <- Tests ].
 

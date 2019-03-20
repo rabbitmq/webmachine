@@ -73,7 +73,7 @@
 %% @spec add_route(hostmatchterm() | pathmatchterm()) -> ok
 %% @doc Adds a route to webmachine's route table. The route should
 %%      be the format documented here:
-%% http://bitbucket.org/justin/webmachine/wiki/DispatchConfiguration
+%% https://bitbucket.org/justin/webmachine/wiki/DispatchConfiguration
 add_route(Route) ->
     add_route(default, Route).
 
